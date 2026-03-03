@@ -13,7 +13,7 @@ Modelo de servidor REST API construído com **Node.js**, **Express** e **Prisma 
 | Base de dados   | PostgreSQL via Prisma ORM           |
 | Autenticação    | JSON Web Tokens (JWT)               |
 | Hashing         | bcrypt                              |
-| Email           | Resend / Nodemailer                 |
+| Email           | Resend                 |
 | Upload          | Cloudinary                          |
 | Documentação    | Swagger UI (OpenAPI 3.0)            |
 | Logging         | Winston                             |
@@ -110,9 +110,9 @@ CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_API_KEY=
 CLOUDINARY_API_SECRET=
 
-# Email
-EMAIL_USER=
-EMAIL_PASS=
+# Resend
+RESEND_API_KEY=
+EMAIL_FROM=
 
 # Fuso horário
 TZ=Africa/Luanda
