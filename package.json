@@ -1,0 +1,41 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "Backend server base model",
+	"license": "ISC",
+	"author": "LouAntonio",
+	"type": "commonjs",
+	"main": "src/server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node src/server.js",
+		"dev": "node --watch src/server.js",
+		"db:generate": "prisma generate",
+		"db:migrate": "prisma migrate dev",
+		"db:migrate:prod": "prisma migrate deploy",
+		"db:push": "prisma db push",
+		"db:pull": "prisma db pull",
+		"db:seed": "prisma db seed",
+		"db:reset": "prisma migrate reset",
+		"db:studio": "prisma studio"
+	},
+	"dependencies": {
+		"@prisma/adapter-pg": "^7.4.2",
+		"@prisma/client": "^7.4.2",
+		"bcrypt": "^6.0.0",
+		"cors": "^2.8.6",
+		"dotenv": "^17.2.3",
+		"express": "^5.2.1",
+		"express-rate-limit": "^8.2.1",
+		"helmet": "^8.1.0",
+		"jsonwebtoken": "^9.0.3",
+		"pg": "^8.19.0",
+		"resend": "^6.9.3",
+		"swagger-jsdoc": "^6.2.8",
+		"swagger-ui-express": "^5.0.1",
+		"winston": "^3.19.0"
+	},
+	"devDependencies": {
+		"prisma": "^7.4.2"
+	}
+}
